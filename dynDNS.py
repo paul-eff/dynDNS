@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     hetzner_api_token = os.getenv('HETZNER_API_TOKEN')
     if not hetzner_api_token:
-        print("No API token. Please follow README for instructions.")
+        print("No API Key. Please follow the README for instructions.")
         exit(1)
     if args.dnsprint:
         print_hetzner_dns_record(hetzner_api_token)
